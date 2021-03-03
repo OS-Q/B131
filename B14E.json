@@ -1,11 +1,11 @@
 {
   "build": {
     "core": "sduino",
-    "extra_flags": "-DSTM8S105",
+    "extra_flags": "-DB14E -DSTM8S105",
     "f_cpu": "16000000L",
     "cpu": "stm8",
     "mcu": "stm8s105k6t6",
-    "variant": "STM8S105K6"
+    "variant": "B14E"
   },
   "debug": {
     "openocd_target": "stm8s",

@@ -1,11 +1,11 @@
 {
   "build": {
     "core": "sduino",
-    "extra_flags": "-DSTM8S208",
+    "extra_flags": "-DB14H -DSTM8S208",
     "f_cpu": "16000000L",
     "cpu": "stm8",
     "mcu": "stm8s208mbt6",
-    "variant": "STM8S208MB"
+    "variant": "B14H"
   },
   "frameworks": [
     "arduino",
