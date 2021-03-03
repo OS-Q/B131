@@ -1,0 +1,26 @@
+{
+  "build": {
+    "core": "sduino",
+    "extra_flags": "-DSTM8S001",
+    "f_cpu": "16000000L",
+    "cpu": "stm8",
+    "mcu": "stm8s001j3p6",
+    "variant": "STM8S001"
+  },
+  "frameworks": [
+    "arduino",
+    "native"
+  ],
+  "upload": {
+    "maximum_ram_size": 1024,
+    "maximum_size": 8192,
+    "protocol": "stlinkv2",
+    "protocols": [
+        "serial",
+        "stlinkv2"
+    ]
+  },
+  "name": "STM8S001J3",
+  "url": "https://www.st.com/zh/microcontrollers-microprocessors/stm8s001j3.html",
+  "vendor": "OS-Q"
+}

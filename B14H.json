@@ -1,0 +1,26 @@
+{
+  "build": {
+    "core": "sduino",
+    "extra_flags": "-DSTM8S208",
+    "f_cpu": "16000000L",
+    "cpu": "stm8",
+    "mcu": "stm8s208mbt6",
+    "variant": "STM8S208MB"
+  },
+  "frameworks": [
+    "arduino",
+    "native"
+  ],
+  "upload": {
+    "maximum_ram_size": 6144,
+    "maximum_size": 131072,
+    "protocol": "serial",
+    "protocols": [
+      "stlinkv2",
+      "serial"
+    ]
+  },
+  "name": "STM8S208MB",
+  "url": "https://www.st.com/zh/microcontrollers-microprocessors/stm8s207-208.html",
+  "vendor": "OS-Q"
+}
