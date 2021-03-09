@@ -7,6 +7,25 @@
     "mcu": "stm8s208mbt6",
     "variant": "B14H"
   },
+  "debug": {
+    "openocd_target": "stm8s",
+    "tools": {
+      "stlink": {
+        "default": true,
+        "server": {
+          "arguments": [
+            "-f",
+            "scripts/interface/stlink.cfg",
+            "-f",
+            "scripts/target/stm8s.cfg"
+          ],
+          "executable": "bin/openocd",
+          "package": "tool-openocd"
+        },
+        "onboard": true
+      }
+    }
+  },
   "frameworks": [
     "arduino",
     "native"

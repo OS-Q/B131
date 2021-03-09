@@ -8,8 +8,8 @@
 #endif
 
 
-#define NUM_DIGITAL_PINS            16
-#define NUM_ANALOG_INPUTS           5
+#define NUM_DIGITAL_PINS            5
+#define NUM_ANALOG_INPUTS           3
 
 
 /* on the STM8S the logical pin numbers are really confusing instead
@@ -52,8 +52,6 @@ static const uint8_t PROGMEM analogInputToDigitalPinMap[5]={6,11,12,14,15};
 					(p<1)?PIN_A0:(\
 					(p<2)?PIN_A1:(\
 					(p<3)?PIN_A2:(\
-					(p<4)?PIN_A3:(\
-					(p<5)?PIN_A4:(\
 					-1)))))))
 
 
@@ -102,8 +100,8 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 #define PIN_A0   		(PC4)		//  6, Ain2
 #define PIN_A1   		(PD2)		// 11, Ain3
 #define PIN_A2   		(PD3)		// 12, Ain4
-#define PIN_A3   		(PD5)		// 14, Ain5
-#define PIN_A4   		(PD6)		// 15, Ain6
+// #define PIN_A3   		(PD5)		// 14, Ain5
+// #define PIN_A4   		(PD6)		// 15, Ain6
 
 /* SDCC workaround
 static const uint8_t A0 = PIN_A0;
@@ -115,8 +113,8 @@ static const uint8_t A4 = PIN_A4;
 #define	A0	PIN_A0
 #define	A1	PIN_A1
 #define	A2	PIN_A2
-#define	A3	PIN_A3
-#define	A4	PIN_A4
+// #define	A3	PIN_A3
+// #define	A4	PIN_A4
 
 // Distinguish between ADC channel number and digital pin number.
 // Note that for value 6 both ranges overlap and it is used a pin number.
@@ -136,9 +134,16 @@ extern const uint8_t digitalPinToAnalogChannelMap[];
 */
 
 #ifdef ARDUINO_MAIN
+// STM8S001J3
+//                       +-\/-+
+// PWM      (D A1) PD6  1|    |8  PD3 (D 12, AI 2) PWM
+//                 GND  2|    |7  PD2 (D 11, AI 1)
+//                Vcap  3|    |6  PB4 (D 10)
+//                 Vdd  4|    |5  PB5 (D 9)   MISO/PWM+
+//                       +----+
 
-// STM8S103F3 breakout board
-//
+
+// STM8S103F3
 //                       +-\/-+
 // PWM      (D 13) PD4  1|    |20  PD3 (D 12, AI 2) PWM
 // TX (D 14, AI 3) PD5  2|    |19  PD2 (D 11, AI 1)

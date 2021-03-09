@@ -7,6 +7,25 @@
     "mcu": "stm8s001j3p6",
     "variant": "B14A"
   },
+  "debug": {
+    "openocd_target": "stm8s",
+    "tools": {
+      "stlink": {
+        "default": true,
+        "server": {
+          "arguments": [
+            "-f",
+            "scripts/interface/stlink.cfg",
+            "-f",
+            "scripts/target/stm8s.cfg"
+          ],
+          "executable": "bin/openocd",
+          "package": "tool-openocd"
+        },
+        "onboard": true
+      }
+    }
+  },
   "frameworks": [
     "arduino",
     "native"
