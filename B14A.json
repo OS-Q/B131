@@ -28,6 +28,8 @@
   },
   "frameworks": [
     "arduino",
+    "spl",
+    "ino",
     "native"
   ],
   "upload": {
