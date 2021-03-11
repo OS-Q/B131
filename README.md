@@ -10,7 +10,7 @@
 * [B14D](https://github.com/OS-Q/B14D) : STM8S105K4
 * [B14E](https://github.com/OS-Q/B14E) : STM8S105K6
 * [B14F](https://github.com/OS-Q/B14F) : STM8S105C6
-* [B14G](https://github.com/OS-Q/B14G) : STM8S207CB
+* [B14G](https://github.com/OS-Q/B14G) : STM8S207K8
 * [B14H](https://github.com/OS-Q/B14H) : STM8S208MB
 
 ### [Q = (OpenSource & OperatingSystem) ](http://www.OS-Q.com)

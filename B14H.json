@@ -35,9 +35,10 @@
   "upload": {
     "maximum_ram_size": 6144,
     "maximum_size": 131072,
-    "protocol": "serial",
+    "protocol": "stlinkv2",
     "protocols": [
       "stlinkv2",
+      "stlinkv21",
       "serial"
     ]
   },
