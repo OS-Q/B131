@@ -11,15 +11,16 @@
     "arduino",
     "spl",
     "ino",
-    "native"
+    "reg"
   ],
   "upload": {
     "maximum_ram_size": 6144,
     "maximum_size": 65536,
     "protocol": "stlinkv21",
     "protocols": [
-      "stlinkv21",
-      "serial"
+      "serial",
+      "stlinkv2",
+      "stlinkv21"
     ],
     "stm8flash_target": "stm8s207k8"
   },

@@ -11,7 +11,7 @@
     "arduino",
     "spl",
     "ino",
-    "native"
+    "reg"
   ],
   "upload": {
     "maximum_ram_size": 1024,
