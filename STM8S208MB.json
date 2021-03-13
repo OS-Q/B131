@@ -5,7 +5,7 @@
     "f_cpu": "16000000L",
     "cpu": "stm8",
     "mcu": "stm8s208mbt6",
-    "variant": "B14H"
+    "variant": "STM8S208MB"
   },
   "debug": {
     "openocd_target": "stm8s",
