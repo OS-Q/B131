@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name sduino_mb-rescue)(type Legacy)(uri ${KIPRJMOD}/sduino_mb-rescue.lib)(options "")(descr ""))
-  (lib (name ch430g)(type Legacy)(uri ${KIPRJMOD}/ch430g.lib)(options "")(descr ""))
-)

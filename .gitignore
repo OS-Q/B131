@@ -3,5 +3,7 @@
 *.kicad_pcb-bak
 fp-info-cache
 rescue-backup
-*-cache*
+# *-cache*
 *dcm*
+sym-lib-table
+*-rescue.lib
