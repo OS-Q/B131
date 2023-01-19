@@ -1,0 +1,35 @@
+{
+    "type":"SoC",
+    "name":"FR8016HA",
+    "title": "freqchip FR8016HA SoC",
+    "description":"freqchip BLE SoC",
+    "Core": {
+        "CoreNum": 1,
+        "Core":"Cortex-M3",
+        "Fmax":48,
+        "DMIPS": 120,
+        "CoreMark": 360
+    },
+    "manufacturer": {
+        "vendor":"freqchip",
+        "homepage":"https://www.freqchip.com/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SoCXin/FR8016HA.git"
+    },
+    "version":"1.0.0",
+    "series":["FR8018HA","FR8016HA","FR8012HA"],
+    "package":["QFN32"],
+    "peripheral": ["BLE","Audio","SDIO","UART","SPI","IIC"],
+    "ESD": {
+        "HBM": 2000,
+        "CDM": 500
+    },
+    "keywords": [
+        "Cortex-M0",
+        "phyplus",
+        "BLE","ADC","ECC","AES","UART","SPI","IIC",
+        "3.6V","1.8V"
+    ]
+}
